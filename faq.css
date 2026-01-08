@@ -1,0 +1,35 @@
+.element {
+    background-color: #fff;
+    color: #1C1A1A;
+    font-weight: 700;
+    font-size: 24px;
+    padding: 30px 70px;
+    margin-bottom: 20px;
+}
+
+.element:nth-child(even) {
+    background-color: #440F51;
+    color: #fff;
+}
+
+.element:nth-child(even):after {
+    /* Иконки пока расположены вплотную к тексту, 
+    т.к. для того чтобы адекватно сдвинуть их вправа, нужно использовать flexbox */
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/images/css/open.svg);
+    background-size: contain;
+    vertical-align: middle;
+}
+
+.element:nth-child(odd):after {
+    content: "";
+    display: inline-block;
+    width: 40px;
+    height: 40px;
+    background-image: url(assets/images/css/open-purple.svg);
+    background-size: contain;
+    vertical-align: middle;
+}
