@@ -13,8 +13,6 @@
 }
 
 .element:nth-child(even):after {
-    /* Иконки пока расположены вплотную к тексту, 
-    т.к. для того чтобы адекватно сдвинуть их вправа, нужно использовать flexbox */
     content: "";
     display: inline-block;
     width: 40px;

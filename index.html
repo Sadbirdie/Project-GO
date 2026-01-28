@@ -10,8 +10,10 @@
 
 <body class="body">
     <div class="wrapper">
-        <header>
-            <img src="assets/images/logo.png" alt="Лого GAME OVER состоит из заглавных букв G и O" aria-hidden="true"
+        <header class="header">
+            <h1 class="title">GAME OVER</h1>
+            <p class="post-title">Новый формат игр и отдыха</p>
+            <!--<img src="assets/images/logo.png" alt="Лого GAME OVER состоит из заглавных букв G и O" aria-hidden="true"
                 width="120" height="66">
 
             <nav>
@@ -25,11 +27,11 @@
                     <li><a href="#five">Частые вопросы</a></li>
                     <li><a href="#six">Контакты</a></li>
                 </ul>
-            </nav>
+            </nav>-->
         </header>
 
         <main>
-            <section>
+            <!--<section>
                 <h2>У нас есть всё для классного отдыха с друзьями!</h2>
 
                 <ul>
@@ -51,22 +53,43 @@
                     <li><img src="assets/images/sony.jpg" alt="Видеоигра на экране" aria-hidden="true" width="380"
                             height="228"><br>PlayStation 5</li>
                 </ul>
+            </section>-->
+
+            <section>
+                <h2 id="one" class="subtitle">Наши залы</h2>
+
+                <p lang="en" class="hall-link">
+                    <a href="assets/vibes.html">
+                        <div class="hall-image1">
+                            <h3 class="hall-title">80's<br>vibes</h3>
+                        </div>
+                    </a>
+                </p>
+                <p lang="en" class="hall-link">
+                    <a href="assets/starwars.html">
+                        <div class="hall-image2">
+                            <h3 class="hall-title">Star<br>wars</h3>
+                        </div>
+                    </a>
+                </p>
+                <p lang="en" class="hall-link">
+                    <a href="assets/wildwest.html">
+                        <div class="hall-image3">
+                            <h3 class="hall-title">Wild<br>west</h3>
+                        </div>
+                    </a>
+                </p>
+                <p lang="en" class="hall-link">
+                    <a href="assets/neon.html">
+                        <div class="hall-image4">
+                            <h3 class="hall-title">Neon<br>style</h3>
+                        </div>
+                    </a>
+                </p>
             </section>
 
             <section>
-                <h2 id="one">Наши залы</h2>
-
-                <ol>
-                    <li lang="en"><a href="assets/vibes.html">80's vibes</a></li>
-                    <li lang="en"><a href="assets/starwars.html">Star wars</a></li>
-                    <li lang="en"><a href="assets/wildwest.html">Wild west</a></li>
-                    <li lang="en"><a href="assets/neon.html">Neon style</a></li>
-                </ol>
-            </section>
-
-            <section>
-                <h2 id="two">Забронировать зал просто</h2> <!--в этом разделе для каждого филдсета указываю div, 
-            т.к. если правильно поняла по скрину-образцу, у каждого из них будет немного разный стиль-->
+                <h2 id="two" class="subtitle">Забронировать</h2>
 
                 <form id="my_form" action="https://jsonplaceholder.typicode.com/posts" method="POST">
                     <fieldset>
@@ -175,26 +198,26 @@
             </section>
 
             <section>
-                <h2 id="three">О нас</h2>
+                <h2 id="three" class="subtitle">О нас</h2>
 
-                <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной реальности</em>
-                    в
-                    центральной части города.</p>
+                <div class="about">
+                    <p>Для наших гостей мы создали <em>концептуально новое игровое пространство виртуальной
+                            реальности</em>
+                        в центральной части города.</p>
 
-                <p>Каждый день мы стараемся создать для Вас самую лучшую игровую атмосферу и радовать Вас топовыми
-                    игровыми
-                    разработками со всего мира.</p>
+                    <p>Каждый день мы стараемся создать для Вас самую лучшую игровую атмосферу и радовать Вас топовыми
+                        игровыми разработками со всего мира.</p>
+                </div>
 
-                <blockquote class="quote">
-                    <p>«<strong>GAME OVER</strong> — это место незабываемых впечатлений»</p>
-                    <cite>Аркадий Абакшин, создатель игровой территории GAME OVER</cite>
+                <blockquote>
+                    <p class="quote">GAME OVER —<br>это место незабываемых впечатлений</p>
+                    <p class="cite"><cite>Аркадий Абакшин,<br>создатель игровой<br>территории GAME OVER</cite></p>
                 </blockquote>
             </section>
 
-            <section id="four">
+            <!--<section id="four">
                 <div>
                     <h2>Отзывы посетителей</h2>
-                    <!--в этом разделе ставлю только один div, т.к. весь раздел будет в одном стиле-->
 
                     <article>
                         <figure>
@@ -236,10 +259,10 @@
                         </blockquote>
                     </article>
                 </div>
-            </section>
+            </section>-->
 
             <section>
-                <h2 id="five">Частые вопросы</h2>
+                <h2 id="five" class="subtitle">Частые вопросы</h2>
                 <div class="container">
                     <p class="element">Можно ли забронировать комнату онлайн?</p>
                     <p class="element">Могут ли мне вернуть деньги за бронь?</p>
@@ -252,18 +275,27 @@
 
         <footer>
             <section>
-                <h2 id="six">Контакты</h2>
-                <address>
-                    <p>г. Москва, ул. Аквамарина, 16</p>
+                <h2 id="six" class="subtitle">Контакты</h2>
+                <address class="address">
+                    <p class="city">г. Москва<br>ул. Аквамарина, 16</p>
 
-                    <p><a href="tel:89509302893">8(950)930-28-93</a></p>
+                    <p class="number"><a href="tel:89509302893">8(950)930-28-93</a></p>
 
-                    <p><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
+                    <p class="mail"><a href="mailto:GameOver@gmail.com">GameOver@gmail.com</a></p>
 
-                    <ul>
-                        <li><a href="https://m.vk.com">Vkontakte</a></li>
-                        <li><a href="https://web.telegram.org">Telegram</a></li>
-                    </ul>
+                    <div class="socials">
+                        <a href="https://m.vk.com">
+                            <div class="vk"></div>
+                        </a>
+
+                        <a href="https://web.telegram.org">
+                            <div class="telegram"></div>
+                        </a>
+
+                        <div class="pinterest"></div>
+
+                        <div class="stumbleupon"></div>
+                    </div>
                 </address>
             </section>
         </footer>
