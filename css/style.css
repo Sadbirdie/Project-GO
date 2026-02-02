@@ -1,21 +1,57 @@
-* {
+html {
     box-sizing: border-box;
 }
 
-.body {
-    font-family: Arial, sans-serif;
-    max-width: 1440px;
-    margin-top: 146px;
-    margin-left: 130px;
-    margin-right: 130px;
-    background-color: #1b1a1b;
-    color: #ffffff;
+* {
+    box-sizing: inherit;
 }
 
-.wrapper {
-    width: 1200px;
+.body {
+    position: relative;
+    overflow-x: hidden;
+    min-width: 320px;
+    min-height: 100vh;
+    font-family: Arial, sans-serif;
+    font-size: 20px;
+    font-weight: 400;
+    line-height: 1.15;
+    color: #ffffff;
+    background-color: #1b1a1b;
+}
+
+img,
+svg {
+    display: block;
+    max-width: 100%;
+    height: auto;
+}
+
+button {
+    cursor: pointer;
+}
+
+a {
+    color: inherit;
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+p,
+figure,
+fieldset {
+    margin: 0;
+}
+
+section {
+    padding-top: 100px;
+}
+
+.container {
+    max-width: 1240px;
     padding: 30px;
-    margin: 0 auto;
+    margin: auto;
 }
 
 .header {
@@ -44,10 +80,10 @@
     content: "";
     position: absolute;
     top: 70px;
-    right: -35px;
+    right: 0;
     width: 675px;
     height: 762px;
-    background-image: url(assets/images/figma-graphics/Слой\ 1\ 1.png);
+    background-image: url(../assets/images/figma-graphics/Слой\ 1\ 1.png);
     background-size: contain;
 }
 
@@ -57,22 +93,18 @@
     line-height: 125%;
     text-transform: uppercase;
     text-align: center;
-    margin-top: 100px;
+    margin-bottom: 60px;
 }
 
 .hall-link {
     margin-bottom: 60px;
 }
 
-a {
-    text-decoration: none;
-}
-
 .hall-image1 {
     border: 1px solid #000;
     width: 1180px;
     height: 710px;
-    background-image: url(assets/images/figma-graphics/80s.jpg);
+    background-image: url(../assets/images/figma-graphics/80s.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -81,7 +113,7 @@ a {
     border: 1px solid #000;
     width: 1180px;
     height: 710px;
-    background-image: url(assets/images/figma-graphics/starwars.jpg);
+    background-image: url(../assets/images/figma-graphics/starwars.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -90,7 +122,7 @@ a {
     border: 1px solid #000;
     width: 1180px;
     height: 710px;
-    background-image: url(assets/images/figma-graphics/wildwest.jpg);
+    background-image: url(../assets/images/figma-graphics/wildwest.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -99,7 +131,7 @@ a {
     border: 1px solid #000;
     width: 1180px;
     height: 710px;
-    background-image: url(assets/images/figma-graphics/neon.jpg);
+    background-image: url(../assets/images/figma-graphics/neon.jpg);
     background-size: cover;
     background-position: center;
 }
@@ -116,10 +148,11 @@ a {
 }
 
 .about p {
-    font-weight: 400;
-    font-size: 20px;
+    font-weight: inherit;
+    font-size: inherit;
     line-height: 140%;
     color: #fff;
+    margin-bottom: 30px;
 }
 
 .quote {
@@ -129,6 +162,7 @@ a {
     text-transform: uppercase;
     color: #ffffff;
     text-transform: uppercase;
+    margin-bottom: 50px;
 }
 
 .quote:before {
@@ -161,7 +195,7 @@ a {
     display: inline-block;
     width: 80px;
     height: 80px;
-    background-image: url(assets/images/figma-graphics/Ellipse\ 2.png);
+    background-image: url(../assets/images/figma-graphics/Ellipse\ 2.png);
     background-size: contain;
     vertical-align: middle;
     margin-right: 20px;
@@ -173,6 +207,7 @@ a {
     font-style: normal;
     line-height: 117%;
     color: #ffffff;
+    margin-bottom: 30px;
 }
 
 .city:before {
@@ -180,10 +215,14 @@ a {
     display: inline-block;
     width: 35px;
     height: 32px;
-    background-image: url(assets/images/figma-graphics/location.svg);
+    background-image: url(../assets/images/figma-graphics/location.svg);
     background-size: contain;
     vertical-align: middle;
     margin-right: 27px;
+}
+
+.number {
+    margin-bottom: 30px;
 }
 
 .number a {
@@ -199,7 +238,7 @@ a {
     display: inline-block;
     width: 35px;
     height: 32px;
-    background-image: url(assets/images/figma-graphics/bx_bxs-phone-call.svg);
+    background-image: url(../assets/images/figma-graphics/bx_bxs-phone-call.svg);
     background-size: contain;
     vertical-align: middle;
     margin-right: 27px;
@@ -218,7 +257,7 @@ a {
     display: inline-block;
     width: 35px;
     height: 32px;
-    background-image: url(assets/images/figma-graphics/envelope.svg);
+    background-image: url(../assets/images/figma-graphics/envelope.svg);
     background-size: contain;
     vertical-align: middle;
     margin-right: 27px;
@@ -229,7 +268,7 @@ a {
     content: "";
     width: 50px;
     height: 50px;
-    background-image: url(assets/images/figma-graphics/vk.svg);
+    background-image: url(../assets/images/figma-graphics/vk.svg);
     background-size: contain;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -243,7 +282,7 @@ a {
     content: "";
     width: 50px;
     height: 50px;
-    background-image: url(assets/images/figma-graphics/tg.svg);
+    background-image: url(../assets/images/figma-graphics/tg.svg);
     background-size: contain;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -256,7 +295,7 @@ a {
     content: "";
     width: 50px;
     height: 50px;
-    background-image: url(assets/images/figma-graphics/pinterest.svg);
+    background-image: url(../assets/images/figma-graphics/pinterest.svg);
     background-size: contain;
     vertical-align: middle;
     background-repeat: no-repeat;
@@ -269,7 +308,7 @@ a {
     content: "";
     width: 50px;
     height: 50px;
-    background-image: url(assets/images/figma-graphics/stumbleupon.svg);
+    background-image: url(../assets/images/figma-graphics/stumbleupon.svg);
     background-size: contain;
     vertical-align: middle;
     background-repeat: no-repeat;
