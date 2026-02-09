@@ -1,0 +1,8 @@
+.reservation__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}

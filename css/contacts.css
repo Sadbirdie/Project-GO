@@ -1,0 +1,89 @@
+.contacts__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.contacts__city, .contacts__number-link, .contacts__mail-link {
+    font-weight: 700;
+    font-size: 24px;
+    font-style: normal;
+    line-height: 117%;
+    color: #ffffff;
+}
+
+.contacts__city {
+    margin-bottom: 30px;
+}
+
+.contacts__city:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    background-image: url(../assets/images/figma-graphics/location.svg);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 27px;
+}
+
+.contacts__number {
+    margin-bottom: 30px;
+}
+
+.contacts__number:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    background-image: url(../assets/images/figma-graphics/bx_bxs-phone-call.svg);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 27px;
+}
+
+.contacts__mail:before {
+    content: "";
+    display: inline-block;
+    width: 35px;
+    height: 32px;
+    background-image: url(../assets/images/figma-graphics/envelope.svg);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 27px;
+}
+
+.contacts__socials--vk,
+.contacts__socials--telegram,
+.contacts__socials--pinterest,
+.contacts__socials--stumbleupon {
+    display: inline-block;
+    content: "";
+    width: 50px;
+    height: 50px;
+    background-size: contain;
+    vertical-align: middle;
+    background-repeat: no-repeat;
+    margin-top: 40px;
+    margin-right: 27px;
+}
+
+.contacts__socials--vk {
+    background-image: url(../assets/images/figma-graphics/vk.svg);
+}
+
+
+.contacts__socials--telegram {
+    background-image: url(../assets/images/figma-graphics/tg.svg);
+}
+
+.contacts__socials--pinterest {
+    background-image: url(../assets/images/figma-graphics/pinterest.svg);
+}
+
+.contacts__socials--stumbleupon {
+    background-image: url(../assets/images/figma-graphics/stumbleupon.svg);
+}

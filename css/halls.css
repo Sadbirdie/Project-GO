@@ -1,0 +1,50 @@
+.halls__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.halls__link {
+    margin-bottom: 60px;
+}
+
+.halls__image1,
+.halls__image2,
+.halls__image3,
+.halls__image4 {
+    border: 1px solid #000;
+    width: 1180px;
+    height: 710px;
+    background-size: cover;
+    background-position: center;
+}
+
+.halls__image1 {
+    background-image: url(../assets/images/figma-graphics/80s.jpg);
+}
+
+.halls__image2 {
+    background-image: url(../assets/images/figma-graphics/starwars.jpg);
+}
+
+.halls__image3 {
+    background-image: url(../assets/images/figma-graphics/wildwest.jpg);
+}
+
+.halls__image4 {
+    background-image: url(../assets/images/figma-graphics/neon.jpg);
+}
+
+.halls__name {
+    font-weight: 700;
+    font-size: 70px;
+    line-height: 114%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #ffffff;
+    text-align: center;
+    margin-top: 275px;
+}

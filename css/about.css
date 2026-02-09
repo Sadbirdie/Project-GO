@@ -1,0 +1,62 @@
+.about__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.about__text {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 140%;
+    color: #fff;
+    margin-bottom: 30px;
+}
+
+.about__quote {
+    font-weight: 400;
+    font-size: 44px;
+    line-height: 114%;
+    text-transform: uppercase;
+    color: #ffffff;
+    text-transform: uppercase;
+    margin-bottom: 50px;
+}
+
+.about__quote:before {
+    content: "„";
+    font-weight: 900;
+    margin-right: 8px;
+    color: #6c0287;
+}
+
+.about__quote:after {
+    content: "“";
+    font-weight: 900;
+    margin-left: 8px;
+    color: #6c0287;
+}
+
+.about__cite,
+.about__cite cite {
+    font-weight: 400;
+    font-size: 20px;
+    line-height: 140%;
+    color: #ffffff;
+    text-align: right;
+    font-style: normal;
+    vertical-align: middle;
+}
+
+.about__cite:before {
+    content: "";
+    display: inline-block;
+    width: 80px;
+    height: 80px;
+    background-image: url(../assets/images/figma-graphics/Ellipse\ 2.png);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 20px;
+}

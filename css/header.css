@@ -1,0 +1,32 @@
+.header {
+    display: block;
+    position: relative;
+    min-height: 862px;
+}
+
+.header__title {
+    font-weight: 900;
+    font-size: 150px;
+    line-height: 100%;
+    letter-spacing: -0.1em;
+    margin-bottom: 0px;
+}
+
+.header__post-title {
+    font-weight: 400;
+    font-size: 28px;
+    line-height: 179%;
+    margin-top: 0px;
+    margin-left: 100px;
+}
+
+.header:after {
+    content: "";
+    position: absolute;
+    top: 70px;
+    right: 0;
+    width: 675px;
+    height: 762px;
+    background-image: url(../assets/images/figma-graphics/Слой\ 1\ 1.png);
+    background-size: contain;
+}
