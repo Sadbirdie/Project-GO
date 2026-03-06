@@ -8,6 +8,7 @@
 }
 
 .faq__element {
+    position: relative;
     background-color: #fff;
     color: #1C1A1A;
     font-weight: 700;
@@ -18,11 +19,13 @@
 
 .faq__element:after {
     content: "";
-    display: inline-block;
-    width: 40px;
-    height: 40px;
+    position: absolute;
+    top: 20px;
+    left: 1000px;
+    width: 46px;
+    height: 46px;
     background-size: contain;
-    vertical-align: middle;
+    background-repeat: no-repeat;
 }
 
 .faq__element:nth-child(even) {

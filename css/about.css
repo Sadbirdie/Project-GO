@@ -7,6 +7,27 @@
     margin-bottom: 60px;
 }
 
+.about__image,
+.about__contents {
+    display: inline-block;
+    vertical-align: top;
+}
+
+.about__image {
+    content: "";
+    width: 600px;
+    height: 596px;
+    background-image: url(../assets/images/figma-graphics/photos\ 1.jpg);
+    background-size: contain;
+    vertical-align: middle;
+    margin-right: 40px;
+}
+
+.about__contents {
+    position: relative;
+    width: 500px;
+}
+
 .about__text {
     font-weight: inherit;
     font-size: inherit;
@@ -16,6 +37,7 @@
 }
 
 .about__quote {
+    position: relative;
     font-weight: 400;
     font-size: 44px;
     line-height: 114%;
@@ -23,40 +45,48 @@
     color: #ffffff;
     text-transform: uppercase;
     margin-bottom: 50px;
+    text-align: left;
+    padding-left: 30px;
 }
 
 .about__quote:before {
-    content: "„";
+    content: "“";
+    position: absolute;
+    left: 0;
+    top: 0;
     font-weight: 900;
     margin-right: 8px;
     color: #6c0287;
 }
 
 .about__quote:after {
-    content: "“";
+    content: "”";
+    display: inline-block;
     font-weight: 900;
     margin-left: 8px;
     color: #6c0287;
 }
 
-.about__cite,
-.about__cite cite {
+.about__cite {
+    position: relative;
+    left: 210px;
     font-weight: 400;
     font-size: 20px;
     line-height: 140%;
     color: #ffffff;
-    text-align: right;
     font-style: normal;
-    vertical-align: middle;
+    text-align: left;
 }
 
 .about__cite:before {
     content: "";
-    display: inline-block;
+    position: absolute;
+    left: -100px;
     width: 80px;
     height: 80px;
     background-image: url(../assets/images/figma-graphics/Ellipse\ 2.png);
     background-size: contain;
-    vertical-align: middle;
-    margin-right: 20px;
+    background-repeat: no-repeat;
+    vertical-align: top;
+    padding-right: 100px;
 }

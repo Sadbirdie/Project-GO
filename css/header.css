@@ -13,11 +13,11 @@
 }
 
 .header__post-title {
+    position: absolute;
+    left: 100px;
     font-weight: 400;
     font-size: 28px;
     line-height: 179%;
-    margin-top: 0px;
-    margin-left: 100px;
 }
 
 .header:after {

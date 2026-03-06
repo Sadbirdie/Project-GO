@@ -15,6 +15,7 @@
 .halls__image2,
 .halls__image3,
 .halls__image4 {
+    position: relative;
     border: 1px solid #000;
     width: 1180px;
     height: 710px;
@@ -39,12 +40,14 @@
 }
 
 .halls__name {
+    position: absolute;
+    top: 275px;
+    left: 480px;
     font-weight: 700;
     font-size: 70px;
     line-height: 114%;
     text-transform: uppercase;
-    text-align: center;
     color: #ffffff;
     text-align: center;
-    margin-top: 275px;
+    margin: auto;
 }
