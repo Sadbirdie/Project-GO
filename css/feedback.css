@@ -1,0 +1,48 @@
+.feedback__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.feedback__article {
+    position: relative;
+}
+
+.feedback__article:not(:last-child) {
+    margin-bottom: 70px;
+}
+
+.feedback__text {
+    font-weight: inherit;
+    font-size: inherit;
+    line-height: 140%;
+    color: #fff;
+}
+
+.feedback__figure {
+    display: inline-block;
+    position: relative;
+    vertical-align: top;
+    margin-right: 20px;
+}
+
+.feedback__guest-img {
+    margin-bottom: 18px;
+}
+
+.feedback__guest-name {
+    position: absolute;
+    left: 70px;
+}
+
+.feedback__blockquote {
+    display: inline-block;
+    position: absolute;
+    left: 300px;
+    top: 58px;
+    width: 680px;
+    vertical-align: top;
+}
