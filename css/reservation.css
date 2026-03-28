@@ -1,3 +1,9 @@
+/*общее*/
+
+.reservation {
+    background-color: #440f51;
+}
+
 .reservation__subtitle {
     font-weight: 700;
     font-size: 40px;
@@ -5,4 +11,301 @@
     text-transform: uppercase;
     text-align: center;
     margin-bottom: 60px;
+}
+
+.reservation__fieldset {
+    border: 0;
+}
+
+.reservation__legend {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 117%;
+    text-align: center;
+    margin-bottom: 30px;
+    color: #fff;
+}
+
+/*залы*/
+
+.fieldset__hall {
+    height: 123px;
+    margin-bottom: 60px;
+}
+
+.reservation__hall-radio-buttons {
+    display: flex;
+    justify-content: space-between;
+    gap: 30px;
+}
+
+.reservation__hall-radio-buttons input[type="radio"] {
+    display: none;
+}
+
+.reservation__hall-button {
+    flex-basis: 250px;
+    height: 55px;
+    padding: 10px 20px;
+    border-radius: 8px;
+    background-color: #fff;
+    cursor: pointer;
+    font-weight: 700;
+    font-size: 30px;
+    line-height: 133%;
+    text-transform: uppercase;
+    text-align: center;
+    color: #000;
+}
+
+.reservation__hall-button:hover {
+    background-color: #ebc0ff;
+    color: #000;
+}
+
+.reservation__hall-button:has(input[type="radio"]:checked) {
+    background-color: #ebc0ff;
+    color: #000;
+}
+
+/*развлечения*/
+
+.entertaintment__container {
+    display: flex;
+    flex-wrap: row nowrap;
+    justify-content: space-around;
+    gap: 10px;
+}
+
+.fieldset__entertainment {
+    height: 287px;
+    margin-bottom: 60px;
+}
+
+.reservation__legend--console,
+.reservation__legend--board,
+.reservation__legend--additional {
+    text-align: left;
+}
+
+.reservation__game-console,
+.reservation__board-game,
+.reservation__additional {
+    display: flex;
+    flex-flow: column nowrap;
+    flex-basis: 280px;
+    max-height: 220px;
+    gap: 20px;
+}
+
+.reservation__console-label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.reservation__console-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 0;
+}
+
+.reservation__console-input:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #f2f0f9;
+    border-radius: 100%;
+}
+
+.reservation__console-input:after {
+    position: absolute;
+    content: '';
+    width: 15px;
+    height: 15px;
+    background: #440f51;
+    border-radius: 50%;
+    opacity: 0;
+    top: 5px;
+    left: 5px;
+    z-index: 1;
+}
+
+.reservation__console-input:focus-visible {
+    outline: none;
+}
+
+.reservation__console-input:checked:after {
+    opacity: 1;
+}
+
+.reservation__board-label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.reservation__board-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 0;
+}
+
+.reservation__board-input:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #f2f0f9;
+}
+
+.reservation__board-input:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.reservation__board-input:focus-visible {
+    outline: none;
+}
+
+.reservation__board-input:checked:after {
+    opacity: 1;
+}
+
+.reservation__additional-label {
+    position: relative;
+    padding-left: 35px;
+}
+
+.reservation__additional-input {
+    position: absolute;
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    appearance: none;
+    left: 0;
+}
+
+.reservation__additional-input:before {
+    position: absolute;
+    content: '';
+    top: 0;
+    left: 0;
+    display: block;
+    width: 25px;
+    height: 25px;
+    background-color: #f2f0f9;
+}
+
+.reservation__additional-input:after {
+    position: absolute;
+    content: '';
+    width: 20px;
+    height: 10px;
+    border: 3px solid black;
+    border-top: none;
+    border-right: none;
+    opacity: 0;
+    transform: rotate(-45deg);
+}
+
+.reservation__additional-input:focus-visible {
+    outline: none;
+}
+
+.reservation__additional-input:checked:after {
+    opacity: 1;
+}
+
+/*дата и др.*/
+
+/* по первым трем полям (дата, время, кол-во человек) не уверена, можно ли адекватно переместить надписи из label в input без JS 
+и нужно ли это на данном этапе, поэтому пока их оставила отдельно */
+
+.fieldset__timedate {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: center;
+    gap: 50px;
+    height: 250px;
+    margin-bottom: 50px;
+}
+
+.timedate__container-1 {
+    display: flex;
+    flex-flow: row wrap;
+    column-gap: 30px;
+    row-gap: 15px;
+    flex-basis: 300px;
+}
+
+.timedate__input1,
+.timedate__input2 {
+    height: 52px;
+}
+
+.timedate__input1--small {
+    width: 134px;
+}
+
+.timedate__input1--big {
+    width: 300px;
+}
+
+.timedate__container-2 {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 15px;
+    column-gap: 50px;
+    flex-basis: 630px;
+}
+
+.timedate__label {
+    font-weight: 700;
+    font-size: 14px;
+    line-height: 114%;
+}
+
+.timedate__input2 {
+    width: 280px;
+}
+
+.field__group {
+    display: flex;
+    flex-flow: column nowrap;
+    gap: 5px;
+}
+
+
+/*кнопка брони*/
+
+.reservation__submit {
+    display: flex;
+    justify-self: flex-end;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 127%;
+    text-transform: uppercase;
+    padding: 16px 40px;
+    color: #6c0287;
+    border-radius: 10px;
+    width: 280px;
+    height: 60px;
+    background: #fff;
+    margin-right: 110px;
 }

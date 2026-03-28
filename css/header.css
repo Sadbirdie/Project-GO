@@ -1,32 +1,27 @@
 .header {
-    display: block;
-    position: relative;
-    min-height: 862px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+    align-items: center;
+    padding-top: 30px;
+    padding-bottom: 50px;
 }
 
-.header__title {
-    font-weight: 900;
-    font-size: 150px;
-    line-height: 100%;
-    letter-spacing: -0.1em;
-    margin-bottom: 0px;
+.nav__list {
+    display: flex;
+    list-style: none;
+    gap: 43px;
+    text-transform: uppercase;
+    padding-left: 0px;
 }
 
-.header__post-title {
-    position: absolute;
-    left: 100px;
-    font-weight: 400;
-    font-size: 28px;
-    line-height: 179%;
-}
-
-.header:after {
-    content: "";
-    position: absolute;
-    top: 70px;
-    right: 0;
-    width: 675px;
-    height: 762px;
-    background-image: url(../assets/images/figma-graphics/Слой\ 1\ 1.png);
-    background-size: contain;
+.header__call {
+    display: flex;
+    border: 3px solid #cd06ff;
+    padding: 16px 30px;
+    border-radius: 10px;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 136%;
+    text-transform: uppercase;
 }

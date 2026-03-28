@@ -14,9 +14,10 @@
 }
 
 .halls__item {
-    position: relative;
-    font-size: 70px;
-    width: 580px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-basis: 580px;
     height: 349px;
     border: 1px solid #000;
     background-size: cover;
@@ -40,9 +41,6 @@
 }
 
 .halls__name {
-    position: absolute;
-    top: 140px;
-    left: 80px;
     font-weight: 700;
     font-size: 70px;
     line-height: 114%;

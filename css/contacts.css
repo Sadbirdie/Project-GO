@@ -1,3 +1,10 @@
+.contacts__address {
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    margin-bottom: 156px;
+}
+
 .contacts__subtitle {
     font-weight: 700;
     font-size: 40px;
@@ -7,7 +14,9 @@
     margin-bottom: 60px;
 }
 
-.contacts__city, .contacts__number-link, .contacts__mail-link {
+.contacts__city,
+.contacts__number-link,
+.contacts__mail-link {
     font-weight: 700;
     font-size: 24px;
     font-style: normal;
@@ -15,7 +24,9 @@
     color: #ffffff;
 }
 
-.contacts__city, .contacts__number, .contacts__mail {
+.contacts__city,
+.contacts__number,
+.contacts__mail {
     position: relative;
     text-align: left;
     padding-left: 70px;
@@ -46,18 +57,15 @@
     background-image: url(../assets/images/figma-graphics/envelope.svg);
 }
 
-.contacts__socials--vk,
-.contacts__socials--telegram,
-.contacts__socials--pinterest,
-.contacts__socials--stumbleupon {
-    display: inline-block;
+.contacts__socials {
+    display: flex;
     content: "";
     width: 50px;
     height: 50px;
     background-size: contain;
     vertical-align: middle;
     background-repeat: no-repeat;
-    margin-right: 27px;
+    gap: 27px;
 }
 
 .contacts__socials--vk {
@@ -75,4 +83,18 @@
 
 .contacts__socials--stumbleupon {
     background-image: url(../assets/images/figma-graphics/stumbleupon.svg);
+}
+
+.credits {
+    display: flex;
+    justify-content: space-between;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 114%;
+}
+
+.credits__designer {
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
 }

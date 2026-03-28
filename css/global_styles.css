@@ -16,7 +16,7 @@ html {
     font-weight: 400;
     line-height: 1.15;
     color: #ffffff;
-    background-color: #1b1a1b;
+    background: linear-gradient(180deg, #1b1a1b 0%, #1b1a1b 93%, #370a37 100%);
 }
 
 img,
@@ -46,7 +46,8 @@ blockquote {
 }
 
 section {
-    padding-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
 }
 
 .container {

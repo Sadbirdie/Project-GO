@@ -1,0 +1,59 @@
+.entertaintment__subtitle {
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 125%;
+    text-transform: uppercase;
+    text-align: center;
+    margin-bottom: 60px;
+}
+
+.entertaintment__flex {
+    display: flex;
+    flex-wrap: wrap;
+    list-style: none;
+    row-gap: 40px;
+    column-gap: 10px;
+    padding-left: 0;
+}
+
+.entertaintment__item {
+    flex-basis: 380px;
+    height: 228px;
+    background-size: cover;
+    background-position: center;
+    align-content: flex-end;
+}
+
+.entertaintment__item--1 {
+    background-image: url(../assets/images/vr.jpg);
+}
+
+.entertaintment__item--2 {
+    background-image: url(../assets/images/audio.jpg);
+}
+
+.entertaintment__item--3 {
+    background-image: url(../assets/images/micro.jpg);
+}
+
+.entertaintment__item--4 {
+    background-image: url(../assets/images/game.jpg);
+}
+
+.entertaintment__item--5 {
+    background-image: url(../assets/images/netflix.jpg);
+}
+
+.entertaintment__item--6 {
+    background-image: url(../assets/images/sony.jpg);
+}
+
+.entertaintment__text {
+    max-width: 300px;
+    max-height: 58px;
+    padding-left: 12px;
+    padding-bottom: 40px;
+    font-weight: 700;
+    font-size: 20px;
+    line-height: 140%;
+}

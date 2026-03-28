@@ -1,6 +1,8 @@
 @import "global_styles.css";
 @import "normalize.css";
 @import "header.css";
+@import "title.css";
+@import "entertaintment.css";
 @import "halls.css";
 @import "reservation.css";
 @import "about.css";
