@@ -46,7 +46,7 @@
 .reservation__hall-button {
     flex-basis: 250px;
     height: 55px;
-    padding: 10px 20px;
+    padding: 7px 20px;
     border-radius: 8px;
     background-color: #fff;
     cursor: pointer;
@@ -59,13 +59,25 @@
 }
 
 .reservation__hall-button:hover {
-    background-color: #ebc0ff;
-    color: #000;
+    border: 3px solid #640aa3;
+    background: #eadeed;
+}
+
+.reservation__hall-button:focus {
+    border: 3px solid #640aa3;
+    background: #fff;
+}
+
+.reservation__hall-button:active {
+    border: 3px solid #fff;
+    background: #6c0287;
+    color: #fff;
 }
 
 .reservation__hall-button:has(input[type="radio"]:checked) {
-    background-color: #ebc0ff;
-    color: #000;
+    border: 3px solid #fff;
+    background: #6c0287;
+    color: #fff;
 }
 
 /*развлечения*/
@@ -136,8 +148,11 @@
     z-index: 1;
 }
 
-.reservation__console-input:focus-visible {
-    outline: none;
+.reservation__console-input:focus {
+    outline: 1px solid #cd06ff;
+    outline-offset: 2px;
+    width: 26px;
+    height: 26px;
 }
 
 .reservation__console-input:checked:after {
@@ -180,8 +195,11 @@
     transform: rotate(-45deg);
 }
 
-.reservation__board-input:focus-visible {
-    outline: none;
+.reservation__board-input:focus {
+    outline: 1px solid #cd06ff;
+    outline-offset: 2px;
+    width: 26px;
+    height: 26px;
 }
 
 .reservation__board-input:checked:after {
@@ -224,8 +242,11 @@
     transform: rotate(-45deg);
 }
 
-.reservation__additional-input:focus-visible {
-    outline: none;
+.reservation__additional-input:focus {
+    outline: 1px solid #cd06ff;
+    outline-offset: 2px;
+    width: 26px;
+    height: 26px;
 }
 
 .reservation__additional-input:checked:after {
@@ -259,6 +280,11 @@
     height: 52px;
 }
 
+.timedate__input1:focus,
+.timedate__input2:focus {
+    outline: 2px solid #cd06ff;
+}
+
 .timedate__input1--small {
     width: 134px;
 }
@@ -282,7 +308,7 @@
 }
 
 .timedate__input2 {
-    width: 280px;
+    width: 300px;
 }
 
 .field__group {
@@ -301,11 +327,28 @@
     font-size: 22px;
     line-height: 127%;
     text-transform: uppercase;
-    padding: 16px 40px;
+    padding: 16px 45px;
     color: #6c0287;
     border-radius: 10px;
-    width: 280px;
+    width: 300px;
     height: 60px;
     background: #fff;
-    margin-right: 110px;
+    margin-right: 80px;
+}
+
+.reservation__submit:hover {
+    border: 3px solid #6c0287;
+    border-radius: 10px;
+    background: #eadeed;
+}
+
+.reservation__submit:focus {
+    border: 3px solid #6c0287;
+    border-radius: 10px;
+    background: #fff;
+}
+
+.reservation__submit:active {
+    border-radius: 10px;
+    background: #eadeed;
 }

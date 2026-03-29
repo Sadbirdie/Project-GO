@@ -15,6 +15,7 @@
     font-size: 24px;
     padding: 30px 70px;
     margin-bottom: 20px;
+    cursor: pointer;
 }
 
 .faq__element:after {
@@ -37,6 +38,22 @@
     background-image: url(../assets/images/css/open.svg);
 }
 
+.faq__element:nth-child(even):hover:after {
+    background-image: url(../assets/images/css/open-hover.svg);
+}
+
+.faq__element:nth-child(even):active:after {
+    background-image: url(../assets/images/css/close-active.svg);
+}
+
 .faq__element:nth-child(odd):after {
     background-image: url(../assets/images/css/open-purple.svg);
+}
+
+.faq__element:nth-child(odd):hover:after {
+    background-image: url(../assets/images/css/open-purple-hover.svg);
+}
+
+.faq__element:nth-child(odd):active:after {
+    background-image: url(../assets/images/css/close-purple-active.svg);
 }

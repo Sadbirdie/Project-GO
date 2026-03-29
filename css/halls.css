@@ -24,6 +24,10 @@
     background-position: center;
 }
 
+.halls__item:hover {
+    border: 1px solid #ffffff;
+}
+
 .halls__item--1 {
     background-image: url(../assets/images/figma-graphics/80s.jpg);
 }

@@ -24,6 +24,20 @@
     color: #ffffff;
 }
 
+.contacts__number-link:hover,
+.contacts__mail-link:hover {
+    color: #cd06ff;
+    text-shadow: 0 0 20px #cd06ff;
+}
+
+.contacts__number-link:focus,
+.contacts__number-link:active,
+.contacts__mail-link:focus,
+.contacts__mail-link:active {
+    color: #cd06ff;
+    text-decoration: underline;
+}
+
 .contacts__city,
 .contacts__number,
 .contacts__mail {

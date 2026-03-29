@@ -15,6 +15,18 @@
     padding-left: 0px;
 }
 
+.nav__item:hover {
+    color: #cd06ff;
+    text-shadow: 0 0 20px #cd06ff;
+}
+
+
+.nav__item:focus, .nav__item:active {
+    color: #cd06ff;
+    text-decoration: underline;
+}
+
+
 .header__call {
     display: flex;
     border: 3px solid #cd06ff;
@@ -24,4 +36,16 @@
     font-size: 22px;
     line-height: 136%;
     text-transform: uppercase;
+}
+
+.header__call:hover, .header__call:focus {
+    border: 3px solid #6c0287;
+    border-radius: 10px;
+    background: #6c0287;
+}
+
+.header__call:active {
+    border: 1px solid #000;
+    border-radius: 10px;
+    background: #640aa3;
 }

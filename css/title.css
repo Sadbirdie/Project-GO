@@ -55,6 +55,15 @@
     padding: 25px 69px;
 }
 
+.title__reservation:hover,
+.title__reservation:focus {
+    background: #840aa3;
+}
+
+.title__reservation:active {
+    background: #640aa3;
+}
+
 .title__button-next {
     display: flex;
     justify-self: flex-end;
@@ -63,9 +72,25 @@
     content: "";
     width: 97px;
     height: 97px;
-    background-image: url(../assets/images/figma-graphics/down.png);
+    background-image: url(../assets/images/figma-graphics/button_down/down.png);
     background-size: contain;
     background-repeat: no-repeat;
+    cursor: pointer;
+}
+
+.title__button-next:hover {
+    background-image: url(../assets/images/figma-graphics/button_down/down-hover.png);
+}
+
+.title__button-next:focus {
+    background-image: url(../assets/images/figma-graphics/button_down/down.png);
+    outline: 2px solid #cd06ff;
+    width: 97px;
+    height: 97px;
+}
+
+.title__button-next:active {
+    background-image: url(../assets/images/figma-graphics/button_down/down-active.png);
 }
 
 .title__title-container {
