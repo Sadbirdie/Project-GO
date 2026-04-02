@@ -22,6 +22,8 @@
     font-style: normal;
     line-height: 117%;
     color: #ffffff;
+    transition-duration: 300ms;
+    transition-property: color, text-shadow, text-decoration;
 }
 
 .contacts__number-link:hover,
@@ -80,6 +82,8 @@
     vertical-align: middle;
     background-repeat: no-repeat;
     gap: 27px;
+    transition-duration: 300ms;
+    transition-property: filter;
 }
 
 .contacts__socials--vk {
@@ -121,6 +125,11 @@
     gap: 10px;
 }
 
+.credits__item-mail {
+    transition-duration: 300ms;
+    transition-property: text-decoration;
+}
+
 .credits__item-mail:hover {
-    text-shadow: 0 0 10px #cd06ff;
+    text-decoration: underline;
 }

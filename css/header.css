@@ -15,6 +15,11 @@
     padding-left: 0px;
 }
 
+.nav__item {
+    transition-duration: 400ms;
+    transition-property: color, text-shadow;
+}
+
 .nav__item:hover {
     color: #cd06ff;
     text-shadow: 0 0 20px #cd06ff;
@@ -36,6 +41,8 @@
     font-size: 22px;
     line-height: 136%;
     text-transform: uppercase;
+    transition-duration: 400ms;
+    transition-property: border, background-color;
 }
 
 .header__call:hover, .header__call:focus {

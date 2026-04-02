@@ -56,6 +56,8 @@
     text-transform: uppercase;
     text-align: center;
     color: #000;
+    transition-duration: 250ms;
+    transition-property: color, border, background-color;
 }
 
 .reservation__hall-button:hover {
@@ -121,6 +123,8 @@
     -moz-appearance: none;
     appearance: none;
     left: 0;
+    transition-duration: 250ms;
+    transition-property: outline;
 }
 
 .reservation__console-input:before {
@@ -177,6 +181,8 @@
     -moz-appearance: none;
     appearance: none;
     left: 0;
+    transition-duration: 250ms;
+    transition-property: outline;
 }
 
 .reservation__board-input:before {
@@ -231,6 +237,8 @@
     -moz-appearance: none;
     appearance: none;
     left: 0;
+    transition-duration: 250ms;
+    transition-property: outline;
 }
 
 .reservation__additional-input:before {
@@ -299,6 +307,8 @@
 .timedate__input1,
 .timedate__input2 {
     height: 52px;
+    transition-duration: 250ms;
+    transition-property: outline;
 }
 
 .timedate__input1:hover,
@@ -360,6 +370,8 @@
     height: 60px;
     background: #fff;
     margin-right: 80px;
+    transition-duration: 250ms;
+    transition-property: border, background-color;
 }
 
 .reservation__submit:hover {

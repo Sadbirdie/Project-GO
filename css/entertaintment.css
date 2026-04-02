@@ -22,7 +22,15 @@
     background-size: cover;
     background-position: center;
     align-content: flex-end;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
 }
+
+.entertaintment__item:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #ffffff;
+}
+
 
 .entertaintment__item--1 {
     background-image: url(../assets/images/vr.jpg);

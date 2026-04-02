@@ -19,13 +19,15 @@
     align-items: center;
     flex-basis: 580px;
     height: 349px;
-    border: 1px solid #000;
     background-size: cover;
     background-position: center;
+    transition-duration: 300ms;
+    transition-property: transform, box-shadow;
 }
 
 .halls__item:hover {
-    border: 1px solid #ffffff;
+    transform: scale(1.1);
+    box-shadow: 0 0 5px #ffffff;
 }
 
 .halls__item--1 {

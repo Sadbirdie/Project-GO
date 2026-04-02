@@ -27,6 +27,8 @@
     height: 46px;
     background-size: contain;
     background-repeat: no-repeat;
+    transition-duration: 300ms;
+    transition-property: background-image;
 }
 
 .faq__element:nth-child(even) {
