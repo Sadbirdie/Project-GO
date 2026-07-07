@@ -1,0 +1,10 @@
+:root {
+    --main-color: #6c0287;
+    --second-main-color: #cd06ff;
+    --third-main-color: #640aa3;
+    --fourth-main-color: #ffffff;
+    --fifth-main-color: #440f51;
+
+    --cart-count: 3;
+    --gap: 30px;
+}

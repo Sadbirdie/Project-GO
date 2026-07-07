@@ -21,20 +21,21 @@
 }
 
 .nav__item:hover {
-    color: #cd06ff;
-    text-shadow: 0 0 20px #cd06ff;
+    color: var(--second-main-color);
+    text-shadow: 0 0 20px var(--second-main-color);
 }
 
 
-.nav__item:focus, .nav__item:active {
-    color: #cd06ff;
+.nav__item:focus,
+.nav__item:active {
+    color: var(--second-main-color);
     text-decoration: underline;
 }
 
 
 .header__call {
     display: flex;
-    border: 3px solid #cd06ff;
+    border: 3px solid var(--second-main-color);
     padding: 16px 30px;
     border-radius: 10px;
     font-weight: 700;
@@ -45,14 +46,15 @@
     transition-property: border, background-color;
 }
 
-.header__call:hover, .header__call:focus {
-    border: 3px solid #6c0287;
+.header__call:hover,
+.header__call:focus {
+    border: 3px solid var(--main-color);
     border-radius: 10px;
-    background: #6c0287;
+    background: var(--main-color);
 }
 
 .header__call:active {
-    border: 1px solid #000;
+    border: 3px solid #000;
     border-radius: 10px;
-    background: #640aa3;
+    background: var(--third-main-color);
 }

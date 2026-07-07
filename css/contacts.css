@@ -21,22 +21,22 @@
     font-size: 24px;
     font-style: normal;
     line-height: 117%;
-    color: #ffffff;
+    color: var(--fourth-main-color);
     transition-duration: 300ms;
     transition-property: color, text-shadow, text-decoration;
 }
 
 .contacts__number-link:hover,
 .contacts__mail-link:hover {
-    color: #cd06ff;
-    text-shadow: 0 0 20px #cd06ff;
+    color: var(--second-main-color);
+    text-shadow: 0 0 20px var(--second-main-color);
 }
 
 .contacts__number-link:focus,
 .contacts__number-link:active,
 .contacts__mail-link:focus,
 .contacts__mail-link:active {
-    color: #cd06ff;
+    color: var(--second-main-color);
     text-decoration: underline;
 }
 
@@ -107,7 +107,7 @@
 .contacts__socials--telegram:hover,
 .contacts__socials--pinterest:hover,
 .contacts__socials--stumbleupon:hover {
-    filter: drop-shadow(0 0 20px #cd06ff);
+    filter: drop-shadow(0 0 20px var(--second-main-color));
 }
 
 

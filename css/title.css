@@ -28,7 +28,7 @@
     text-transform: uppercase;
     max-width: 193px;
     text-align: center;
-    color: #cd06ff;
+    color: var(--second-main-color);
 }
 
 .title__purple-text--new {
@@ -46,8 +46,8 @@
     border-radius: 10px;
     width: 374px;
     height: 80px;
-    box-shadow: 0 0 20px #6c0287;
-    background: #6c0287;
+    box-shadow: 0 0 20px var(--main-color);
+    background: var(--main-color);
     font-weight: 700;
     font-size: 26px;
     line-height: 115%;
@@ -63,7 +63,7 @@
 }
 
 .title__reservation:active {
-    background: #640aa3;
+    background: var(--third-main-color);
 }
 
 .title__button-next {
@@ -88,7 +88,7 @@
 
 .title__button-next:focus {
     background-image: url(../assets/images/figma-graphics/button_down/down.png);
-    outline: 2px solid #cd06ff;
+    outline: 2px solid var(--second-main-color);
     width: 97px;
     height: 97px;
 }

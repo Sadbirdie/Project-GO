@@ -27,7 +27,7 @@
 
 .halls__item:hover {
     transform: scale(1.1);
-    box-shadow: 0 0 5px #ffffff;
+    box-shadow: 0 0 5px var(--fourth-main-color);
 }
 
 .halls__item--1 {
@@ -52,5 +52,5 @@
     line-height: 114%;
     text-transform: uppercase;
     text-align: center;
-    color: #ffffff;
+    color: var(--fourth-main-color);
 }

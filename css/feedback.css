@@ -19,7 +19,7 @@
     font-weight: inherit;
     font-size: inherit;
     line-height: 140%;
-    color: #fff;
+    color: var(--fourth-main-color);
 }
 
 .feedback__figure {
@@ -30,8 +30,36 @@
 }
 
 .feedback__guest-img {
+    width: 280px;
+    height: 280px;
     margin-bottom: 18px;
 }
+
+.feedback__guest-img--guest1 {
+    background-image: url(../assets/images/guests/guest1.png);
+}
+
+.feedback__guest-img--guest2 {
+    background-image: url(../assets/images/guests/guest2.png);
+}
+
+.feedback__guest-img--guest3 {
+    background-image: url(../assets/images/guests/guest3.png);
+}
+
+.feedback__guest-img::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 280px;
+    height: 280px;
+    border-radius: 50%;
+    background-image: radial-gradient(50% 50% at 50% 50%, rgba(196, 196, 196, 0) 0%, rgba(108, 2, 135, 0.5) 100%);
+    z-index: 1;
+}
+
+
 
 .feedback__guest-name {
     position: absolute;

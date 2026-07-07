@@ -12,12 +12,12 @@
     flex-wrap: wrap;
     list-style: none;
     row-gap: 40px;
-    column-gap: 10px;
+    column-gap: var(--gap);
     padding-left: 0;
 }
 
 .entertaintment__item {
-    flex-basis: 380px;
+    flex-basis: calc(100% / var(--cart-count) - (var(--gap) * (var(--cart-count) - 1)) / var(--cart-count));
     height: 228px;
     background-size: cover;
     background-position: center;
@@ -26,11 +26,24 @@
     transition-property: transform, box-shadow;
 }
 
-.entertaintment__item:hover {
-    transform: scale(1.1);
-    box-shadow: 0 0 5px #ffffff;
+.entertaintment__item--2,
+.entertaintment__item--5 {
+    transform: translateY(25%);
 }
 
+.entertaintment__item--2:hover,
+.entertaintment__item--5:hover {
+    transform: translateY(25%) scale(1.1);
+    box-shadow: 0 0 5px var(--fourth-main-color);
+}
+
+.entertaintment__item--1:hover,
+.entertaintment__item--3:hover,
+.entertaintment__item--4:hover,
+.entertaintment__item--6:hover {
+    transform: scale(1.1);
+    box-shadow: 0 0 5px var(--fourth-main-color);
+}
 
 .entertaintment__item--1 {
     background-image: url(../assets/images/vr.jpg);
